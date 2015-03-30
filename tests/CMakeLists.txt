@@ -31,6 +31,8 @@ if (UNIX)
     add_definitions(-fPIC)
 endif()
 
+qt5_use_modules(test_basic Core Widgets)
+
 target_link_libraries(test_basic
     ${GTEST_BOTH_LIBRARIES}
     ${PROCRUN_LIBRARY})
